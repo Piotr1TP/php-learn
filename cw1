@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<?php
+$txt1 ="Nagłówek 1";
+$txt2 ="Nagłówek 2";
+$txt3 ="Nagłówek 3";
+echo "<table border='1' width='300' height='100'>";
+echo "<td>$txt1</td>";
+echo "<td>$txt2</td>";
+echo "<td>$txt3</td>";
+echo "<tr>";
+for($i=1;$i<=8;$i++){
+    echo "<tr>";
+	echo "<td>";
+	echo rand (1 ,10);
+	echo "<td>";
+	echo rand (40 ,99);
+	echo "<td>";
+	echo array_rand(["NULL","1","2"]);
+	echo "<tr>";
+    }
+
+?>
+
+<a href ="http://mynthon.net/_xhtml/tables_testsuite/xhtml.tables_test_suite.html ">Visit mynthon.net</a>
+
+</body>
+</html>
